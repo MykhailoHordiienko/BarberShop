@@ -5,36 +5,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Хедер -->
 
-    <header>
+    <header class="header">
       <a href="./index.html"><img src="./img/Logo.svg" alt="Лого" /></a>
       <nav>
-        <ul>
-          <li><a href="#description">О нас</a></li>
-          <li><a href="#price">Услуги и цены</a></li>
-          <li><a href="#masters">Мастера</a></li>
-          <li><a href="#contacts">Контакты</a></li>
+        <ul class="header-list list">
+          <li><a class="link" href="#description">О нас</a></li>
+          <li><a class="link" href="#price">Услуги и цены</a></li>
+          <li><a class="link" href="#masters">Мастера</a></li>
+          <li><a class="link" href="#contacts">Контакты</a></li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">онлайн-запись</button>
+      <button class="button-wight" type="button">онлайн-запись</button>
+      <a class="tel" href="tel:+380441111111">+38 044 111 11 11</a>
     </header>
     <main>
       <!-- Герой -->
 
       <section>
         <h2 hidden>Соц Сети</h2>
-        <ul>
+        <ul class="social list">
           <li>
-            <a href="" target="_blank" rel="noopener nofollow noreferrer"
+            <a class="link" href="" target="_blank" rel="noopener nofollow noreferrer"
               >Instagram</a
             >
           </li>
           <li>
-            <a href="" target="_blank" rel="noopener nofollow noreferrer"
+            <a class="link" href="" target="_blank" rel="noopener nofollow noreferrer"
               >Youtube</a
             >
           </li>
@@ -42,10 +49,10 @@
       </section>
 
       <section>
-        <p lang="en">A hair salon for men in Kyiv</p>
-        <h1 lang="en">BarberShop</h1>
-        <p>
-          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со
+        <p class="hero-rgba" lang="en">A hair salon for men in Kyiv</p>
+        <h1 class="hero-title" lang="en">BarberShop</h1>
+        <p class="hero-text">
+          Мы эксперты в модных мужских стрижках. <br> Работаем быстро, осторожно и со
           вкусом.
         </p>
       </section>
@@ -54,23 +61,23 @@
 
       <section id="description">
         <ul>
-          <li>
+          <li class="list">
             <img src="./img/shave-1-min.jpg" alt="бреет шею" width="300" />
           </li>
-          <li>
+          <li class="list">
             <img src="./img/shave-2-min.jpg" alt="бреет бороду" width="300" />
           </li>
         </ul>
 
-        <p>О НАС</p>
-        <h2>Лучший Барбершоп твоего города</h2>
+        <p class="descripton">О Нас</p>
+        <h2 class="descripton-title">Лучший Барбершоп твоего города</h2>
 
-        <p>
+        <p class="description-text">
           Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
           нам.
         </p>
 
-        <p>
+        <p class="description-text">
           Мы команда, которая никогда не останавливается на достигнутом и жаждет
           перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не
           сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
@@ -78,77 +85,77 @@
           приходит!
         </p>
 
-        <button type="button">онлайн-запись</button>
+        <button class="button-black" type="button">онлайн-запись</button>
       </section>
 
       <!-- Цены -->
 
       <section id="price">
-        <p>Проведи время в компании лучших мастеров</p>
-        <h2>Услуги и цены</h2>
+        <p class="price">Проведи время в компании лучших мастеров</p>
+        <h2 class="price-title">Услуги и цены</h2>
         <ul>
-          <li>
-            <p>Мужская стрижка</p>
-            <p>от 300 грн.</p>
+          <li class="list">
+            <p class="price-menu">Мужская стрижка</p>
+            <p class="price-price">от 300 грн.</p>
           </li>
-          <li>
-            <p>Стрижка бороды</p>
-            <p>от 200 грн.</p>
+          <li class="list">
+            <p class="price-menu">Стрижка бороды</p>
+            <p class="price-price">от 200 грн.</p>
           </li>
-          <li>
-            <p>Стрижка усов</p>
-            <p>от 200 грн.</p>
+          <li class="list">
+            <p class="price-menu">Стрижка усов</p>
+            <p class="price-price">от 200 грн.</p>
           </li>
-          <li>
-            <p>Бритье опасной бритвой</p>
-            <p>от 200 грн.</p>
+          <li class="list">
+            <p class="price-menu">Бритье опасной бритвой</p>
+            <p class="price-price">от 200 грн.</p>
           </li>
         </ul>
         <ul>
-          <li>
-            <p>Cтрижка у стажера</p>
-            <p>от 50 грн.</p>
+          <li class="list">
+            <p class="price-menu">Cтрижка у стажера</p>
+            <p class="price-price">от 50 грн.</p>
           </li>
-          <li>
-            <p>Стрижка под насадку</p>
-            <p>от 200 грн.</p>
+          <li class="list">
+            <p class="price-menu">Стрижка под насадку</p>
+            <p class="price-price">от 200 грн.</p>
           </li>
-          <li>
-            <p>Детская стрижка (до 12 лет)</p>
-            <p>от 300 грн.</p>
+          <li class="list">
+            <p class="price-menu">Детская стрижка (до 12 лет)</p>
+            <p class="price-price">от 300 грн.</p>
           </li>
-          <li>
-            <p>Камуфлирование седины</p>
-            <p>от 200 грн.</p>
+          <li class="list">
+            <p class="price-menu">Камуфлирование седины</p>
+            <p class="price-price">от 200 грн.</p>
           </li>
         </ul>
-        <button type="button">онлайн-запись</button>
+        <button class="button-black" type="button">онлайн-запись</button>
       </section>
 
       <!-- Преемущества -->
 
       <section>
-        <ul>
+        <ul class="list">
           <li>
-            <span>600</span>
+            <span class="number">600</span>
             <p>Довольных клиентов в день</p>
           </li>
           <li>
-            <span>50</span>
+            <span class="number">50</span>
             <p>Наград за отличный сервис</p>
           </li>
           <li>
-            <span>20</span>
+            <span class="number">20</span>
             <p>Лучших мастеров Киева</p>
           </li>
           <li>
-            <span>100</span>
+            <span class="number">100</span>
             <p>Подарков постоянным клиентам</p>
           </li>
         </ul>
-        <p>старая традиционная школа</p>
-        <h2>Почему приходят именно к нам?</h2>
-        <p>
+        <p class="achievements">старая традиционная школа</p>
+        <h2 class="achievements-title">Почему приходят именно к нам?</h2>
+        <p class="achievements-text">
           О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
           чем 10 раз прочитать.
         </p>
@@ -201,9 +208,18 @@
         <h2>Контакты</h2>
         <address>
           <ul>
-            <li><a href="https://goo.gl/maps/h4vLAByY2q1y7VdBA" target="_blank" rel="noopener nofollow noreferrer">ул. Васильковскаая, 7А Киев, 08132</a></li>
+            <li>
+              <a
+                href="https://goo.gl/maps/h4vLAByY2q1y7VdBA"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+                >ул. Васильковскаая, 7А Киев, 08132</a
+              >
+            </li>
             <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-            <li><a href="mailto:barbershop@email.com">barbershop@email.com</a></li>
+            <li>
+              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+            </li>
           </ul>
         </address>
         <p>время работы</p>
