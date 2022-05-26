@@ -7,14 +7,31 @@
   --akcent-color: #ff6c00;
 }
 
+/* сбрасываем свойства */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 body {
   font-family: "Open Sans", "sans-serif";
   font-weight: 400;
   font-size: 14px;
   line-height: 1.85;
   letter-spacing: 0.02em;
-  /* Удалить!!!! */
-  background-color: #a38c8c;
 }
 
 .list {
@@ -25,7 +42,39 @@ body {
   text-decoration: none;
 }
 
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  /* Удалить!!!! */
+  background-color: teal;
+}
+
 /* Хедер */
+
+.header-conteiner {
+  display: flex;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  justify-content: center;
+  outline: 1px solid red;
+}
+
+.header-list {
+  display: flex;
+  margin-left: 70px;
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.header-list > .item:not(:first-child) {
+  margin-left: 40px;
+}
 
 .header-list,
 .link {
@@ -62,6 +111,11 @@ body {
 /* Кнопка Записи */
 
 .button-wight {
+  border: 1px solid var(--akcent-color);
+  border-radius: 25px;
+  padding: 10px 20px;
+  margin-left: 20px;
+
   color: var(--primary-wight-color);
   font-weight: 600;
   font-size: 12px;
@@ -69,6 +123,7 @@ body {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   font-family: inherit;
+  background-color: transparent;
 }
 
 .button-wight:hover,
@@ -77,6 +132,16 @@ body {
 }
 
 .button-black {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  padding: 10px 20px;
+
+  border: 1px solid var(--akcent-color);
+  border-radius: 25px;
+  background-color: transparent;
+
   color: var(--link-button-color);
   font-weight: 600;
   font-size: 12px;
@@ -106,8 +171,15 @@ body {
 }
 
 /* Герой */
+.hero-conteiner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 90px;
+  outline: 1px solid red;
+}
 
 .hero-rgba {
+  margin-bottom: 20px;
   color: var(--rgba-color);
   font-weight: 600;
   font-size: 11px;
@@ -117,6 +189,7 @@ body {
 }
 
 .hero-title {
+  margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 48px;
@@ -133,7 +206,27 @@ body {
 
 /* О нас */
 
+.description-photo {
+  display: flex;
+}
+
+.description-photo .item + .item {
+  margin-left: 30px;
+}
+
+#description > .conteiner {
+  outline: 1px solid red;
+  display: flex;
+  padding-top: 155px;
+  padding-bottom: 90px;
+}
+
+.description-content {
+  margin-left: 65px;
+}
+
 .descripton {
+  margin-bottom: 20px;
   color: var(--link-button-color);
   font-weight: 600;
   font-size: 11px;
@@ -146,18 +239,73 @@ body {
   color: var(--link-button-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 42px;
   line-height: 1.17;
   letter-spacing: 0.05em;
 }
 
+.description-text.midl-text {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
 .description-text {
+  margin-top: 20px;
   color: var(--primary-text-color);
+  width: 500px;
+
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
 }
 
 /* Цены */
 
+#price > .conteiner {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  outline: 1px solid red;
+}
+
+.conteiner-price {
+  display: flex;
+}
+
+.price-left {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.price-left > .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-left > .list:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.price-right {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.price-right > .list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-right > .list:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .price {
+  margin-bottom: 20px;
   color: var(--rgba-color);
   font-weight: 600;
   font-size: 11px;
@@ -167,6 +315,7 @@ body {
 }
 
 .price-title {
+  margin-bottom: 45px;
   color: var(--primary-wight-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
