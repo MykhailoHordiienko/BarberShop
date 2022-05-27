@@ -55,7 +55,7 @@
         <div class="conteiner">
           <h2 hidden>Соц Сети</h2>
           <ul class="social list">
-            <li>
+            <li class="item">
               <a
                 class="link"
                 href=""
@@ -64,7 +64,7 @@
                 >Instagram</a
               >
             </li>
-            <li>
+            <li class="item">
               <a
                 class="link"
                 href=""
@@ -178,114 +178,172 @@
       <!-- Преемущества -->
 
       <section>
-        <ul class="list">
-          <li>
-            <span class="number">600</span>
-            <p>Довольных клиентов в день</p>
-          </li>
-          <li>
-            <span class="number">50</span>
-            <p>Наград за отличный сервис</p>
-          </li>
-          <li>
-            <span class="number">20</span>
-            <p>Лучших мастеров Киева</p>
-          </li>
-          <li>
-            <span class="number">100</span>
-            <p>Подарков постоянным клиентам</p>
-          </li>
-        </ul>
-        <p class="achievements">старая традиционная школа</p>
-        <h2 class="achievements-title">Почему приходят именно к нам?</h2>
-        <p class="achievements-text">
-          О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать,
-          чем 10 раз прочитать.
-        </p>
+        <div class="conteiner">
+          <div class="conteiner-number">
+            <ul class="list">
+              <li>
+                <span class="number">600</span>
+                <p>Довольных клиентов в день</p>
+              </li>
+              <li>
+                <span class="number">50</span>
+                <p>Наград за отличный сервис</p>
+              </li>
+              <li>
+                <span class="number">20</span>
+                <p>Лучших мастеров Киева</p>
+              </li>
+              <li>
+                <span class="number">100</span>
+                <p>Подарков постоянным клиентам</p>
+              </li>
+            </ul>
+            <div class="conteiner-number-text">
+              <p class="achievements">старая традиционная школа</p>
+              <h2 class="achievements-title">
+                Почему приходят <br />
+                именно к нам?
+              </h2>
+              <p class="achievements-text">
+                О нас говорят только хорошее. Но лучше 1 раз увидеть и
+                прочувствовать, чем 10 раз прочитать.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Мастера -->
 
       <section id="masters">
-        <p>для настоящих ценителей атмосферы</p>
-        <h2>Наши мастера</h2>
-        <ul>
-          <li>
-            <img src="./img/JohnSmith-min.jpg" width="300" alt="John Smith" />
-            <h3 lang="en">John Smith</h3>
-            <p>Extreme Barber</p>
-          </li>
-          <li>
-            <img src="./img/MicheleDoe-min.jpg" width="300" alt="Michele Doe" />
-            <h3 lang="en">Michele Doe</h3>
-            <p>Extreme Barber</p>
-          </li>
-          <li>
-            <img src="./img/AlanBlack-min.jpg" width="300" alt="Alan Black" />
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
-          </li>
-        </ul>
+        <div class="conteiner">
+          <p class="masters-text">для настоящих ценителей атмосферы</p>
+          <h2 class="masters-title">Наши мастера</h2>
+          <ul class="list master-list">
+            <div class="master-card">
+              <li>
+                <img
+                  src="./img/JohnSmith-min.jpg"
+                  width="370"
+                  alt="John Smith"
+                />
+                <h3 class="master-name" lang="en">John Smith</h3>
+                <p class="master-work">Extreme Barber</p>
+              </li>
+            </div>
+            <div class="master-card">
+              <li>
+                <img
+                  src="./img/MicheleDoe-min.jpg"
+                  width="370"
+                  alt="Michele Doe"
+                />
+                <h3 class="master-name" lang="en">Michele Doe</h3>
+                <p class="master-work">Extreme Barber</p>
+              </li>
+            </div>
+            <div class="master-card">
+              <li>
+                <img
+                  src="./img/AlanBlack-min.jpg"
+                  width="370"
+                  alt="Alan Black"
+                />
+                <h3 class="master-name" lang="en">Alan Black</h3>
+                <p class="master-work">Extreme Barber</p>
+              </li>
+            </div>
+          </ul>
+        </div>
       </section>
 
       <!-- Портфолио -->
 
-      <section>
-        <h2 hidden>Портфолио</h2>
-        <p>На латинском языке “барба” означает “борода”</p>
-        <ul>
-          <li><img src="./img/work-1-min.jpg" alt="Стрижет" /></li>
-          <li><img src="./img/work-2-min.jpg" alt="Пенит" /></li>
-          <li><img src="./img/work-3-min.jpg" alt="Парит" /></li>
-          <li><img src="./img/work-4-min.jpg" alt="Бреет" /></li>
-        </ul>
+      <section class="portfolio">
+        <div class="conteiner">
+          <h2 hidden>Портфолио</h2>
+          <p class="portfolio-text">
+            На латинском языке “барба” означает “борода”
+          </p>
+          <ul class="list portfolio-list">
+            <li class="portfolio-photo">
+              <img src="./img/work-1-min.jpg" alt="Стрижет" width="270px" />
+            </li>
+            <li class="portfolio-photo">
+              <img src="./img/work-2-min.jpg" alt="Пенит" width="270px" />
+            </li>
+            <li class="portfolio-photo">
+              <img src="./img/work-3-min.jpg" alt="Парит" width="270px" />
+            </li>
+            <li class="portfolio-photo">
+              <img src="./img/work-4-min.jpg" alt="Бреет" width="270px" />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Запись+Контакты -->
 
-      <section>
-        <h2>Онлайн-запись</h2>
-      </section>
+      <div class="conteiner conteiner-contacts">
+        <section class="online-form">
+          <h2 class="online-title">Онлайн-запись</h2>
+        </section>
 
-      <section id="contacts">
-        <h2>Контакты</h2>
-        <address>
-          <ul>
-            <li>
-              <a
-                href="https://goo.gl/maps/h4vLAByY2q1y7VdBA"
-                target="_blank"
-                rel="noopener nofollow noreferrer"
-                >ул. Васильковскаая, 7А Киев, 08132</a
-              >
-            </li>
-            <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-            <li>
-              <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-            </li>
-          </ul>
-        </address>
-        <p>время работы</p>
-        <p>Ежедневно с 9:00 до 22:00</p>
-      </section>
+        <section id="contacts">
+          <h2 class="contact-title">Контакты</h2>
+          <address class="adress">
+            <ul class="list">
+              <li class="link-adress">
+                <a
+                  class="link"
+                  href="https://goo.gl/maps/h4vLAByY2q1y7VdBA"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  >ул. Васильковскаая, 7А Киев, 08132</a
+                >
+              </li>
+              <li class="link-adress">
+                <a class="link" href="tel:+380441111111">+38 044 111 11 11</a>
+              </li>
+              <li class="link-adress">
+                <a class="link" href="mailto:barbershop@email.com"
+                  >barbershop@email.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <p class="time-title">время работы</p>
+          <p class="time-work">Ежедневно с 9:00 до 22:00</p>
+        </section>
+      </div>
     </main>
 
     <!-- Футер -->
 
     <footer>
-      <p>&#169; Copiright 2020</p>
-      <ul>
-        <li>
-          <a href="" target="_blank" rel="noopener nofollow noreferrer"
-            >Instagram</a
-          >
-        </li>
-        <li>
-          <a href="" target="_blank" rel="noopener nofollow noreferrer"
-            >Youtube</a
-          >
-        </li>
-      </ul>
+      <div class="conteiner">
+        <p class="copy-write">&#169; Copiright 2020</p>
+        <ul class="social list footer">
+          <li class="item">
+            <a
+              class="link"
+              href=""
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="item">
+            <a
+              class="link"
+              href=""
+              target="_blank"
+              rel="noopener nofollow noreferrer"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>

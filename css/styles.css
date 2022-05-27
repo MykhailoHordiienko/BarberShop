@@ -158,6 +158,14 @@ body {
 
 /* Инста-Ютуб */
 
+.social.list {
+  display: flex;
+}
+
+.social.list > .item:not(:first-child) {
+  margin-left: 40px;
+}
+
 .social .link {
   color: var(--link-button-color);
   font-weight: 600;
@@ -212,6 +220,10 @@ body {
 
 .description-photo .item + .item {
   margin-left: 30px;
+}
+
+#description {
+  border-color: var(--primary-wight-color);
 }
 
 #description > .conteiner {
@@ -338,6 +350,17 @@ body {
 
 /* Преемущесчтва */
 
+.conteiner-number {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 150px;
+  padding-bottom: 140px;
+}
+
+.conteiner-number-text {
+  margin-left: 130px;
+}
+
 .number {
   color: var(--link-button-color);
   font-weight: 700;
@@ -348,6 +371,8 @@ body {
 }
 
 .achievements {
+  margin-bottom: 20px;
+  width: 290px;
   color: var(--link-button-color);
   font-weight: 600;
   font-size: 11px;
@@ -357,6 +382,7 @@ body {
 }
 
 .achievements-title {
+  margin-bottom: 20px;
   color: var(--link-button-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -366,7 +392,188 @@ body {
 }
 
 .achievements-text {
+  width: 500px;
   color: var(--primary-text-color);
   font-size: 18px;
   line-height: 1.6;
+}
+
+/* Наши мастера */
+
+#masters > .conteiner {
+  padding-top: 130px;
+  padding-bottom: 130px;
+  background-color: #f7f7f7;
+  outline: 1px solid red;
+}
+
+.conteiner > .master-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.master-card {
+  text-align: center;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+
+.masters-text {
+  color: var(--link-button-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.masters-title {
+  margin-top: 20px;
+  margin-bottom: 45px;
+  color: var(--link-button-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.master-name {
+  color: var(--link-button-color);
+  font-size: 18px;
+  line-height: 1.38;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+.master-work {
+  color: var(--akcent-color);
+  font-size: 14px;
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+/* Портфолио */
+
+.conteiner > .portfolio-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.portfolio-photo {
+  flex-basis: calc(100% / 4 -30px);
+  margin-left: 30px;
+}
+
+.portfolio > .conteiner {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.portfolio-text {
+  margin-bottom: 45px;
+  color: var(--link-button-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Запись+Контакты */
+
+.conteiner-contacts {
+  outline: 1px solid red;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  display: flex;
+  justify-content: center;
+}
+
+.online-form {
+  flex-grow: 1;
+  padding-left: 60px;
+}
+
+#contacts {
+  flex-grow: 1;
+  padding-left: 100px;
+}
+
+.online-title {
+  color: var(--primary-wight-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.contact-title {
+  margin-bottom: 40px;
+  color: var(--primary-wight-color);
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.adress > .list > .link-adress > .link {
+  color: var(--secondary-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.adress > .list > .link-adress > .link:focus,
+.adress > .list > .link-adress > .link:hover {
+  color: var(--akcent-color);
+}
+
+.adress > .list > .link-adress:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.time-title {
+  margin-top: 70px;
+  margin-bottom: 20px;
+  color: var(--primary-wight-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.time-work {
+  color: var(--secondary-text-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/* FOOTER */
+
+.copy-write {
+  color: var(--secondary-text-color);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+.social.list.footer {
+  padding-right: 55px;
+}
+
+footer > .conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
