@@ -56,7 +56,7 @@ body {
   background-image: url(../img/background1.jpg);
   background-size: 1100px 680px;
   background-repeat: no-repeat;
-  background-position-x: 275px;
+  background-position-x: 280px;
 }
 
 /* Хедер */
@@ -164,13 +164,17 @@ body {
 
 /* Инста-Ютуб */
 
-.social.list {
+.hero-header {
   display: flex;
 }
 
-.social.list > .item:not(:first-child) {
-  margin-left: 40px;
+.social.list {
+  width: 90px;
 }
+
+/* .social.list > .item:not(:first-child) {
+  margin-left: 40px;
+} */
 
 .social .link {
   color: var(--link-button-color);
@@ -186,6 +190,7 @@ body {
 
 /* Герой */
 .hero-conteiner {
+  flex-grow: 1;
   padding-top: 200px;
   padding-bottom: 200px;
   padding-left: 90px;
@@ -279,6 +284,11 @@ body {
 
 /* Цены */
 
+.background2 {
+  background-image: url(../img/background2.jpg);
+  background-size: contain;
+}
+
 #price > .conteiner {
   padding-top: 130px;
   padding-bottom: 130px;
@@ -362,17 +372,47 @@ body {
   padding-bottom: 140px;
 }
 
+.conteiner-number > .list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 370px;
+}
+
 .conteiner-number-text {
   margin-left: 130px;
+  flex-grow: 1;
+}
+
+.number-list {
+  width: 170px;
+  height: 133px;
+  border: 1px solid #000000;
+  padding: 20px 24px;
+}
+
+.number-list:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.number-list:nth-child(even) {
+  margin-top: 30px;
 }
 
 .number {
   color: var(--link-button-color);
   font-weight: 700;
   font-size: 42px;
-  line-height: 1.35;
+  line-height: calc(57 / 42);
   text-align: center;
   letter-spacing: 0.05em;
+  display: block;
+}
+
+.number-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
 }
 
 .achievements {
@@ -493,6 +533,8 @@ body {
   padding-bottom: 130px;
   display: flex;
   justify-content: center;
+  background-image: url(../img/background3.jpg);
+  background-size: contain;
 }
 
 .online-form {
