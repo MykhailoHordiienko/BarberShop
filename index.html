@@ -42,7 +42,9 @@
         </nav>
         <div class="contacts">
           <a class="tel" href="tel:+380441111111">+38 044 111 11 11</a>
-          <button class="button-wight" type="button">онлайн-запись</button>
+          <button class="button-wight" type="button" data-modal-open>
+            онлайн-запись
+          </button>
         </div>
       </div>
     </header>
@@ -117,7 +119,9 @@
               усовершенствовать каждого, кто к нам приходит!
             </p>
 
-            <button class="button-black" type="button">онлайн-запись</button>
+            <button class="button-black" type="button" data-modal-open>
+              онлайн-запись
+            </button>
           </div>
         </div>
       </section>
@@ -166,7 +170,9 @@
               </li>
             </ul>
           </div>
-          <button class="button-price" type="button">онлайн-запись</button>
+          <button class="button-price" type="button" data-modal-open>
+            онлайн-запись
+          </button>
         </div>
       </section>
 
@@ -399,7 +405,7 @@
     <footer>
       <div class="conteiner">
         <p class="copy-write">&#169; Copiright 2020</p>
-        <ul class="social list footer">
+        <ul class="social-list list footer">
           <li class="item">
             <a
               class="link"
@@ -421,5 +427,11 @@
         </ul>
       </div>
     </footer>
+    <div class="back-drop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-button" type="button" data-modal-close>X</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
